@@ -3,7 +3,7 @@ class CreateProperties < ActiveRecord::Migration[7.0]
     create_table :properties do |t|
       t.string :name
       t.string :image
-      t.boolean :reserve
+      t.boolean :reserve, default: false
       t.string :location
       t.integer :price
       t.timestamps
