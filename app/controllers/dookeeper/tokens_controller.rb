@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 module Doorkeeper
   class TokensController < Doorkeeper::ApplicationMetalController
     before_action :validate_presence_of_client, only: [:revoke]
@@ -132,7 +130,7 @@ module Doorkeeper
       @authorize_response ||= begin
         before_successful_authorization
         auth = strategy.authorize
-        context = build_context(auth: auth)
+        context = build_context(auth:)
         after_successful_authorization(context) unless auth.is_a?(Doorkeeper::OAuth::ErrorResponse)
         auth
       end
@@ -153,7 +151,7 @@ module Doorkeeper
     def revocation_error_response
       error_description = I18n.t(:unauthorized, scope: %i[doorkeeper errors messages revoke])
 
-      { error: :unauthorized_client, error_description: error_description }
+      { error: :unauthorized_client, error_description: }
     end
   end
 end

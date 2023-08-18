@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 module Doorkeeper
   class ApplicationMetalController <
     Doorkeeper.config.resolve_controller(:base_metal)
