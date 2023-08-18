@@ -50,4 +50,3 @@ end
 gem 'devise', '~> 4.3'
 gem 'doorkeeper', '~> 5.6'
 gem 'rubocop', '>= 1.0', '< 2.0'
-
