@@ -17,9 +17,9 @@
 default: &default
   username: postgres
   # password: 12345678
-  password: Yegon@99
-  #password: 12345678
-  #password: 12345678
+  # password: Yegon@99
+  # password: 12345678
+  password: 5432
   host: localhost
   port: 5432
   adapter: postgresql
