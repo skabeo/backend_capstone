@@ -3,7 +3,7 @@ require_relative '../../concerns/render_helper'
 class Api::V1::PropertiesController < ApplicationController
   include RenderHelper
 
-  skip_before_action :verify_authenticity_token, only: [:create, :destroy]
+  skip_before_action :verify_authenticity_token, only: %i[create destroy]
 
   def index
     @properties = Property.all
