@@ -35,6 +35,12 @@ RSpec.describe 'api/v1/reservations', type: :request do
         let(:Authorization) { 'Bearer lorem' }
         run_test!
       end
+
+      response '401', 'reservations created' do
+        let(:reservation) { { city: 'Cotonou', date_of_visit: '2023-09-09', property_id: 5 } }
+        let(:Authorization) { 'Bearer lorem' }
+        run_test!
+      end
     end
   end
 
