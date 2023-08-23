@@ -80,7 +80,37 @@ paths:
         '200':
           description: Success
           content:
-          
+          application/json:
+              example:
+                - id: 1
+                  name: Example Property 1
+                  image: https://photo.com
+                  price: 40000
+                  reserve: false
+                  location: Accra
+                - id: 2
+                  name: Example Property 2
+                  image: https://photo2.com
+                  price: 10000
+                  reserve: false
+                  location: Nairobi
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                    name:
+                      type: string
+                    image:
+                      type: string
+                    price:
+                      type: number
+                    reserve:
+                      type: boolean
+                    location:
+                      type: string
 servers:
 - url: https://{defaultHost}
   variables:
