@@ -1,0 +1,70 @@
+---
+openapi: 3.0.1
+info:
+  title: Get more properties API
+  version: v1
+paths:
+  "/api/v1/users":
+    post:
+      summary: Sign up
+      tags:
+      - users
+      parameters: []
+      responses:
+        '401':
+          description: invalid request
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                email:
+                  type: string
+                password:
+                  type: string
+                client_id:
+                  type: string
+              required:
+              - name
+              - email
+              - password
+              - client_id
+  "/api/v1/oauth/token":
+    post:
+      summary: Sign in
+      tags:
+      - users
+      parameters: []
+      responses:
+        '401':
+          description: invalid request
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                grant_type:
+                  type: string
+                email:
+                  type: string
+                password:
+                  type: string
+                client_id:
+                  type: string
+                client_secret:
+                  type: string
+              required:
+              - email
+              - password
+              - grant_type
+              - client_id
+              - client_secret
+servers:
+- url: https://{defaultHost}
+  variables:
+    defaultHost:
+      default: www.example.com
