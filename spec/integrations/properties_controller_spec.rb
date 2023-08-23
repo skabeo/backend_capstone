@@ -31,6 +31,12 @@ RSpec.describe 'api/v1/properties', type: :request do
         let(:Authorization) { 'Bearer lorem' }
         run_test!
       end
+
+      response '200', 'property created' do
+        let(:property) { { name: 'Ile Ijebu', image: 'https://image.com', rserve: false, price: 150000, location: 'Ogun state' } }
+        let(:Authorization) { 'Bearer lorem' }
+        run_test!
+      end
     end
   end
 
