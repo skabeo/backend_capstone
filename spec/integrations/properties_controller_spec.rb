@@ -27,39 +27,38 @@ RSpec.describe 'api/v1/properties', type: :request do
         required: %w[name image price location]
       }
       response '200', 'property created' do
-        let(:property) { { name: 'Ile Oyo', image: 'https://image.com', rserve: false, price: 100000, location: 'Oyo state' } }
+        let(:property) { { name: 'Ile Oyo', image: 'https://image.com', rserve: false, price: 100_000, location: 'Oyo state' } }
         let(:Authorization) { 'Bearer lorem' }
         run_test!
       end
 
       response '200', 'property created' do
-        let(:property) { { name: 'Ile Save', image: 'https://image.com', rserve: false, price: 100000, location: 'Collines' } }
+        let(:property) { { name: 'Ile Save', image: 'https://image.com', rserve: false, price: 100_000, location: 'Collines' } }
         let(:Authorization) { 'Bearer lorem' }
         run_test!
       end
 
       response '200', 'property created' do
-        let(:property) { { name: 'Ile Kilibo', image: 'https://image.com', rserve: false, price: 100000, location: 'Collines' } }
+        let(:property) { { name: 'Ile Kilibo', image: 'https://image.com', rserve: false, price: 100_000, location: 'Collines' } }
         let(:Authorization) { 'Bearer lorem' }
         run_test!
       end
 
       response '200', 'property created' do
-        let(:property) { { name: 'Ile Ire', image: 'https://image.com', rserve: false, price: 100000, location: 'Ajashe' } }
+        let(:property) { { name: 'Ile Ire', image: 'https://image.com', rserve: false, price: 100_000, location: 'Ajashe' } }
         let(:Authorization) { 'Bearer lorem' }
         run_test!
       end
 
       response '200', 'property created' do
-        let(:property) { { name: 'Ile Ijebu', image: 'https://image.com', rserve: false, price: 150000, location: 'Ogun state' } }
+        let(:property) { { name: 'Ile Ijebu', image: 'https://image.com', rserve: false, price: 150_000, location: 'Ogun state' } }
         let(:Authorization) { 'Bearer lorem' }
         run_test!
       end
     end
   end
 
-
-  path "/api/v1/properties/{id}" do
+  path '/api/v1/properties/{id}' do
     parameter name: :id, in: :path, type: :integer, required: true
 
     delete 'Delete property' do
@@ -81,5 +80,4 @@ RSpec.describe 'api/v1/properties', type: :request do
       end
     end
   end
-
 end
