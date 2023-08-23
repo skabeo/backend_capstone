@@ -63,6 +63,24 @@ paths:
               - grant_type
               - client_id
               - client_secret
+   "/api/v1/properties":
+    parameters:
+    - name: Authorization
+      in: header
+      description: bearer xyz
+      schema:
+        type: string
+    get:
+      summary: list properties
+      tags:
+      - properties 
+      responses:
+        '401':
+          description: Invalid request
+        '200':
+          description: Success
+          content:
+          
 servers:
 - url: https://{defaultHost}
   variables:
