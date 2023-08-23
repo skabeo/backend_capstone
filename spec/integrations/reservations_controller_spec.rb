@@ -30,7 +30,11 @@ RSpec.describe 'api/v1/reservations', type: :request do
         run_test!
       end
 
-      
+      response '401', 'Invalid request' do
+        let(:reservation) { { city: 'Accra', date_of_visit: '2023-09-09', property_id: 4 } }
+        let(:Authorization) { 'Bearer lorem' }
+        run_test!
+      end
     end
   end
 
