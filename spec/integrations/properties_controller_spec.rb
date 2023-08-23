@@ -40,4 +40,28 @@ RSpec.describe 'api/v1/properties', type: :request do
     end
   end
 
+
+  path "/api/v1/properties/{id}" do
+    parameter name: :id, in: :path, type: :integer, required: true
+
+    delete 'Delete property' do
+      tags 'properties'
+      consumes 'application/json'
+
+      let(:id) { 30 }
+      let(:properties) { {} }
+
+      response '200', 'property deleted' do
+        let(:Authorization) { 'Bearer lorem' }
+        run_test!
+      end
+
+      response '200', 'invalid request' do
+        let(:id) { 26 }
+        let(:Authorization) { 'Bearer lorem' }
+        run_test!
+      end
+    end
+  end
+
 end
