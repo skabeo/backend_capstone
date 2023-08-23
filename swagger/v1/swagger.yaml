@@ -85,6 +85,20 @@ paths:
               - image
               - price
               - location
+  "/api/v1/reservations":
+    parameters:
+    - name: Authorization
+      in: header
+      description: bearer xyz
+      schema:
+        type: string
+    get:
+      summary: list reservations
+      tags:
+      - reservations
+      responses:
+        '401':
+          description: Invalid request
   "/api/v1/users":
     post:
       summary: Sign up
