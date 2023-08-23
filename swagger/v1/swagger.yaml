@@ -99,6 +99,37 @@ paths:
       responses:
         '401':
           description: Invalid request
+   "/api/v1/reservations/create":
+    parameters:
+    - name: Authorization
+      in: header
+      description: bearer xyz
+      schema:
+        type: string
+    post:
+      summary: Create a reservation
+      tags:
+      - reservations
+      parameters: []
+      responses:
+        '401':
+          description: invalid request
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                city:
+                  type: string
+                date_of_visit:
+                  type: string
+                property_id:
+                  type: number
+              required:
+              - city
+              - date_of_visit
+              - property_id
   "/api/v1/users":
     post:
       summary: Sign up
