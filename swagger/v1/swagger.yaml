@@ -85,6 +85,31 @@ paths:
               - image
               - price
               - location
+  "/api/v1/properties/delete":
+    parameters:
+    - name: Authorization
+      in: header
+      description: bearer xyz
+      schema:
+        type: string
+    delete:
+      summary: Delete a property
+      tags:
+      - properties
+      parameters: []
+      responses:
+        '401':
+          description: invalid request
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                property_id:
+                  type: number
+              required:
+              - property_id
   "/api/v1/reservations":
     parameters:
     - name: Authorization
@@ -99,7 +124,7 @@ paths:
       responses:
         '401':
           description: Invalid request
-   "/api/v1/reservations/create":
+  "/api/v1/reservations/create":
     parameters:
     - name: Authorization
       in: header
