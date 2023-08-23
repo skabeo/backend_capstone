@@ -111,6 +111,40 @@ paths:
                       type: boolean
                     location:
                       type: string
+    "/api/v1/properties/create":
+    parameters:
+    - name: Authorization
+      in: header
+      description: bearer xyz
+      schema:
+        type: string
+    post:
+      summary: Create a property
+      tags:
+      - properties
+      parameters: []
+      responses:
+        '401':
+          description: invalid request
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                image:
+                  type: string
+                price:
+                  type: number
+                location:
+                  type: string
+              required:
+              - name
+              - image
+              - price
+              - location
 servers:
 - url: https://{defaultHost}
   variables:
