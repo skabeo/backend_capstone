@@ -57,7 +57,7 @@ RSpec.describe 'api/v1/properties', type: :request do
       end
 
       response '200', 'invalid request' do
-        let(:id) { 26 }
+        let(:id) { 30 }
         let(:Authorization) { 'Bearer lorem' }
         run_test!
       end
