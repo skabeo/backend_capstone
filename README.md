@@ -1,24 +1,150 @@
-# README
+<div align="center">
+  <h3><b>Property Rental App</b></h3>
+</div>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# 📗 Table of Contents
 
-Things you may want to cover:
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 About the Project](#-about-the-project)
+  - [🛠 Built With](#-built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [💻 Getting Started](#-getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+  - [🔭 Future Features](#-future-features)
+  - [🤝 Contributing](#-contributing)
+  - [⭐️ Show your Support](#-show-your-support)
+  - [🙏 Acknowledgments](#-acknowledgments)
+  - [📝 License](#-license)
 
-* Ruby version
+# 📖 About the Project <a name="about-project"></a>
 
-* System dependencies
+**Property Rental App** is a web application designed to facilitate the booking of appointments to view and rent properties. The project follows a provided design and layout but adapts the content to offer a platform for reserving appointments with properties for rent.
 
-* Configuration
+Select a theme for your website - is it going to be a website for booking doctor appointments, booking online classes, or something else?
 
-* Database creation
+## 🛠 Built With <a name="built-with"></a>
 
-* Database initialization
+### Tech Stack <a name="tech-stack"></a>
 
-* How to run the test suite
+<details>
+  <summary>Ruby on Rails</summary>
+  <summary>CSS</summary>
+  <summary>JavaScript</summary>
+  <summary>HTML</summary>
+  <summary>React</summary>
+  <summary>Redux</summary>
+  <summary>Postgres</summary>
+</details>
 
-* Services (job queues, cache servers, search engines, etc.)
+### Key Features <a name="key-features"></a>
+- **Responsive design**
+- **User authentication with username and password**
+- **User can view list of properties for rent**
+- **User can view details of a specific property**
+- **User can reserve an appointment to view a property**
+- **User can view their reservations**
+- **User can add and delete properties**
 
-* Deployment instructions
+<!-- LIVE DEMO -->
+## [Live Demo](https://your-live-demo-link.com)
+## [Video Presentation](https://your-video-presentation-link.com)
 
-* ...
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+In order to run this project, you need:
+- To have the teck stack mentioned [above](#tech-stack);
+- To have the following repositories and follow the instructions in the respective README docs:
+
+    - [Front end](https://github.com/skabeo/frontend-capstone);
+    - [Back end](https://github.com/skabeo/backend_capstone)
+
+### Setup
+Clone this repository to your desired folder:
+
+```sh
+git clone https://github.com/skabeo/backend_capstone.git
+cd backend_capstone
+```
+## Install backend dependencies
+bundle install
+
+## Create the db, Seed important data and run pending migrations
+- rails db;create
+- rails db:seed
+- rails db:migrate
+
+
+
+## Start Rails server
+rails s
+
+## Important
+- On the landing page, copy and save your **CLIENT_ID** and your **CLIENT_SECRET**: You will use them on the frontend app.
+- Click on ```View API documentation``` to get the API documentation.
+
+## Rubocop
+> To run testing
+```
+rubocop
+```
+
+
+<!-- AUTHORS -->
+
+👤 **Abdel-Khafid SALAOU**
+
+- GitHub: [@githubhandle](https://github.com/adeola003)
+- Twitter: [@twitterhandle](https://twitter.com/khadaf6)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdel-khafid-salaou)
+
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- **Only admin can add and delete properties**
+- **Users will get confirmation emails after reserving a property**
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+Feel free to check the [issue page](https://github.com/skabeo/frontend-capstone/issues)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+
+If you like this repo dont forget to give it a star.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank the Microverse community and the partners.
+I also give thanks to [Murat Korkmaz on Behance](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign/modules/173005579?log_shim_removal=1), the author of original design we got inspiration from.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE.md) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
