@@ -75,7 +75,7 @@ cd backend_capstone
 bundle install
 
 ## Create the db, Seed important data and run pending migrations
-- rails db;create
+- rails db:create
 - rails db:seed
 - rails db:migrate
 
@@ -97,6 +97,14 @@ rubocop
 
 <!-- AUTHORS -->
 
+## 👥 Author <a id="authors"></a>
+
+👤 **Spencer Okyere**
+
+- GitHub: [@skabeo](https://github.com/skabeo)
+- Twitter: [@black_okyere](https://twitter.com/black_okyere)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/spencer-okyere)
+
 👤 **Abdel-Khafid SALAOU**
 
 - GitHub: [@githubhandle](https://github.com/adeola003)
@@ -114,10 +122,21 @@ rubocop
 
 <!-- CONTRIBUTING -->
 
-## 🤝 Contributing <a name="contributing"></a>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Contributing <a id="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
-Feel free to check the [issue page](https://github.com/skabeo/backend_capstone/issues)
+
+Feel free to check the [issues page](https://github.com/skabeo/backend-capstone/issues).
+
+If you would like to contribute to this project, you can follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your changes.
+3. Make your changes and commit them.
+4. Push your changes to your forked repository.
+5. Create a pull request back to the original repository.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -133,18 +152,27 @@ If you like this repo dont forget to give it a star.
 
 <!-- ACKNOWLEDGEMENTS -->
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
+## 🙏 Acknowledgments <a id="acknowledgements"></a>
 
-I would like to thank the Microverse community and the partners.
-I also give thanks to [Murat Korkmaz on Behance](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign/modules/173005579?log_shim_removal=1), the author of original design we got inspiration from.
+I would like to express my gratitude to the following individuals and organizations for their contributions to this project:
+
+- [GitHub](https://github.com/): Platform for version control and collaboration
+- [Microverse](https://www.microverse.org/): Global school for remote software developers
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## ❓ FAQ <a id="faq"></a>
+
+- **How can I contribute to this project?**
+
+  - Contributions, issues, and feature requests are welcome! You can check the issues page to see if there are any current issues or feature requests that you can work on. If not, feel free to submit a new issue or pull request. Before contributing, please read the CONTRIBUTING.md file for guidelines on how to contribute to this project.
 
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE.md) licensed.
+This project is [MIT](https://github.com/skabeo/backend_capstone/blob/develop/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
