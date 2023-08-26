@@ -117,7 +117,7 @@ rubocop
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
-Feel free to check the [issue page](https://github.com/skabeo/frontend-capstone/issues)
+Feel free to check the [issue page](https://github.com/skabeo/backend_capstone/issues)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
