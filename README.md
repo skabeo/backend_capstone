@@ -50,7 +50,9 @@ Select a theme for your website - is it going to be a website for booking doctor
 
 <!-- LIVE DEMO -->
 ## [Live Demo](https://your-live-demo-link.com)
-## [Video Presentation](https://your-video-presentation-link.com)
+
+A live demo link would be up soon
+
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -93,6 +95,10 @@ rails s
 ```
 rubocop
 ```
+
+## Front end repo
+
+You can find the link to the frontend pull request [here](https://github.com/skabeo/frontend-capstone/pull/18)
 
 
 <!-- AUTHORS -->
