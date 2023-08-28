@@ -87,7 +87,7 @@ bundle install
 rails s
 
 ## Important
-- On the landing page, copy and save your **CLIENT_ID** and your **CLIENT_SECRET**: You will use them on the frontend app.
+- Open the rails application on the browser, copy and save your **CLIENT_ID** and your **CLIENT_SECRET**: You will use them on the frontend app.
 - Click on ```View API documentation``` to get the API documentation.
 
 ## Rubocop
@@ -106,6 +106,20 @@ To run some custom tests created for this project:
 ```sh
 rspec
 ```
+- There would be two test failing in `spec/integrations/properties_controller_spec.rb`.
+- Add the query
+```
+INSERT INTO properties (name, image, location, price, created_at, updated_at)
+VALUES ('Sample Property', 'sample-image.jpg', 'Accra', 100, NOW(), NOW());
+```
+into the backend_capstone_test database using the Query tool in Postgres. NB: It should be in the test environment database
+- Copy the `id` of the property added when you run the query
+```
+SELECT *
+FROM properties
+```
+- Replace the id in the in the `spec/integrations/properties_controller_spec.rb` on line 38 and 77 with the id copied
+- Re run rspec, all the tests should pass now
 
 
 <!-- AUTHORS -->
