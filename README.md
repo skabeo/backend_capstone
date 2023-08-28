@@ -117,6 +117,10 @@ rubocop
 - Twitter: [@yegonbrian8](https://twitter.com/yegonbrian8)
 - LinkedIn: [Brian Yegon](https://www.linkedin.com/in/brian-yegon-0717a1241/)
 
+👤 **Juan Diaz**
+
+- GitHub: [@juanmanuelbyc](https://github.com/juanmanuelbyc)
+
 
 <!-- FUTURE FEATURES -->
 
