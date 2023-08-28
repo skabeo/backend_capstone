@@ -111,6 +111,12 @@ rubocop
 - Twitter: [@twitterhandle](https://twitter.com/khadaf6)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdel-khafid-salaou)
 
+👤 **Brian Kimutai Yegon**
+
+- GitHub: [@yegonkimutai](https://github.com/yegonkimutai)
+- Twitter: [@yegonbrian8](https://twitter.com/yegonbrian8)
+- LinkedIn: [Brian Yegon](https://www.linkedin.com/in/brian-yegon-0717a1241/)
+
 
 <!-- FUTURE FEATURES -->
 
