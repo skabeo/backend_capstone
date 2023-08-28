@@ -18,11 +18,11 @@ default: &default
   # username: adeola
   username: postgres
   password: 12345678
-  # password: Yegon@99
+  password: Yegon@99
   # password: 5432
   # password: 54232322
   host: localhost
-  port: 5432
+  # port: 5432
   adapter: postgresql
   encoding: unicode
   # For details on connection pooling, see Rails configuration guide
