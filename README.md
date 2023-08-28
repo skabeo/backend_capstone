@@ -133,6 +133,8 @@ rspec
 👤 **Juan Diaz**
 
 - GitHub: [@juanmanuelbyc](https://github.com/juanmanuelbyc)
+- Twitter: [@twitter](https://twitter.com/juanmanueldiar)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/juan-díaz-5281b3111/)
 
 
 <!-- FUTURE FEATURES -->
