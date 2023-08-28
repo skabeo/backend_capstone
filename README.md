@@ -12,7 +12,7 @@
   - [💻 Getting Started](#-getting-started)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
-    - [Install](#install)
+    - [Test](#tests)
   - [🔭 Future Features](#-future-features)
   - [🤝 Contributing](#-contributing)
   - [⭐️ Show your Support](#-show-your-support)
@@ -99,6 +99,13 @@ rubocop
 ## Front end repo
 
 You can find the link to the frontend pull request [here](https://github.com/skabeo/frontend-capstone/pull/18)
+
+
+### Tests
+To run some custom tests created for this project:
+```sh
+rspec
+```
 
 
 <!-- AUTHORS -->
