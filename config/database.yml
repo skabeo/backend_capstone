@@ -17,9 +17,9 @@
 default: &default
   # username: adeola
   username: postgres
-  password: 12345678
+  # password: 12345678
   # password: Yegon@99
-  # password: 5432
+  password: 5432
   # password: 54232322
   host: localhost
   port: 5432
@@ -89,6 +89,4 @@ test:
 #
 production:
   <<: *default
-  database: backend_capstone_production
-  username: backend_capstone
-  password: <%= ENV["BACKEND_CAPSTONE_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
